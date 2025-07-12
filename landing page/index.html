@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -88,30 +89,30 @@
 
                     <form action="">
                         <label for="nome">Nome do parceiro: </label>
-                        <input type="text" name="nome">
+                        <input type="text" name="nome" id="nomeParceiro">
                         <p>tipo do parceiro: </p>
-                            <select name="tipo-do-parceiro" id="tipo-do-parceiro">
-                            <option value="ecoponto">Ecoponto</option>
-                            <option value="cooperativa">Cooperativa</option>
-                            <option value="ponto-de-entrega-voluntaria">Ponto de entrega voluntária</option>
+                            <select name="tipo-do-parceiro" id="tipoParceiro">
+                            <option value="ECO">Ecoponto</option>
+                            <option value="COO">Cooperativa</option>
+                            <option value="PEVS">Ponto de entrega voluntária</option>
                             </select>
                             <label for="responsavel">Responsável pelo parceiro: </label>
-                            <input type="text" name="responsavel">
+                            <input type="text" name="responsavel" id="responsavel">
                             <label for="telefone">Telefone do responsável: </label>
-                            <input type="tel" name="telefone">
+                            <input type="tel" name="telefone" id="telefone">
                             <label for="email">Email do responsável</label>
-                            <input type="email">
+                            <input type="email" id="email">
                             <p>Endereço: </p>
                                 <label for="rua">Rua: </label>
-                                <input type="text" name="rua">
+                                <input type="text" name="rua" id="rua">
                                 <label for="numero">Número: </label>
-                                <input type="number" name="numero">
+                                <input type="number" name="numero" id="numero">
                                 <label for="bairro">Bairro: </label>
-                                <input type="text" name="bairro">
+                                <input type="text" name="bairro" id="bairro">
 
                             <p>Tipos de resíduos aceitos: </p>
                             <span id="checkbox">
-                                <input type="checkbox" id="papel">
+                            <input type="checkbox" id="papel">
                             <label for="papel">Papel</label>
                              <input type="checkbox" id="plastico">
                             <label for="plastico">Plástico</label>
@@ -119,18 +120,20 @@
                             <label for="vidro">Vidro</label>
                              <input type="checkbox" id="metal">
                             <label for="metal">Metal</label>
-                             <input type="checkbox" id="oleo">
-                            <label for="oleo">Óleo de cozinha</label>
-                             <input type="checkbox" id="pilhas">
-                            <label for="pilhas">Pilhas e Baterias</label>
+                             <input type="checkbox" id="oleoCozinha">
+                            <label for="oleoCozinha">Óleo de cozinha</label>
+                             <input type="checkbox" id="pilhaBateria">
+                            <label for="pilhaBateria">Pilhas e Baterias</label>
                              <input type="checkbox" id="eletronico">
                             <label for="eletronico">Eletrônicos</label>
+                            <input type="checkbox" id="roupa">
+                            <label for="roupa">Roupas</label>
                              <input type="checkbox" id="outro">
                             <label for="outro">Outro</label>
                             </span>
                             
 
-                            <input type="submit" value="Enviar">
+                            <input type="submit" value="Enviar" id="btnEnviar">
                     </form>
 
 
@@ -156,5 +159,6 @@
             
 </section>
     </footer>
+    <script src="landing.js"></script>
 </body>
 </html>
