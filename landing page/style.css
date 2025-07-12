@@ -79,14 +79,19 @@ article{
     }
 
     form{
+        border-radius: 20px;
         align-items: center;
         width: 30%;
          background-color: #7ee4b1;
          padding: 20px; 
-         display: grid;
-
-    
-    
+         display: flex;
+         flex-direction: column;
+   }
+   #checkbox{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
    }
    input{
     width: 300px;
