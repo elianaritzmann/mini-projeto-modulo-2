@@ -1,0 +1,102 @@
+body{
+    width: 97%;
+    background-color: #36c281;
+    padding: 5px;
+     margin: 20px;
+    display: grid;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    background-color:#43bb83;
+    
+   
+}
+#logo{
+    height:200px;
+    width: 200px;
+
+}
+nav{
+    background-color: #ffffff;
+    height: 50px;
+    padding-top: 20px;
+    align-items: center;
+    border-radius: 20px;
+    border-color: #43bb83;
+}
+button{
+    background-color: #7ee4b1;
+    padding: 10px;
+   
+    border-radius: 20px;
+}
+button>a{
+    color: #fff;
+}
+main{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+   
+    gap: 20px;
+}
+footer{
+    background-color: #43bb83;
+    padding: 20px;
+    color: aliceblue;
+    
+}
+a{
+    color: #ffffff;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#logo-senai{
+    height: 60px;
+    width: 120px;
+}
+#logo-lab{
+    height: 60px;
+    width: 60px;
+}
+article{
+    text-align: center;
+    background-color: #43bb83;
+    padding: 40px;
+    color: #f5f2f5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    
+}
+    img{
+        height: 300px;
+        width: 500px;
+        padding: 20px;
+    }
+
+    form{
+        align-items: center;
+        width: 30%;
+         background-color: #7ee4b1;
+         padding: 20px; 
+         display: grid;
+
+    
+    
+   }
+   input{
+    width: 300px;
+    height: 20px;
+   }
+   select{
+     width: 300px;
+    height: 20px;
+   }
+
+
+
+
