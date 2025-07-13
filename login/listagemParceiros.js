@@ -29,13 +29,15 @@ const parceirosFiltrados = data.filter(parceiro =>
           }
 
           return `
-             <a href="detalhesParceiro.html?id=${p.id} class= "link-card"> <div class ="card">
-              <img src="${avatar}" alt="tipo de parceiro" class= "img-card">
-              <p><strong>Nome:</strong> ${p.nomeParceiro}</p>
-              <p><strong>Bairro:</strong> ${p.bairro}</p>
-              <p><strong>Data de inclusão do registro:</strong> ${p.dataCriacao}</p>
-            </div> </a>
-          `;
+<a class="link-card" href="detalhamento.html?id=${p.id}"><div class="card">
+      <img src="${avatar}" alt="tipo de parceiro" class="img-card">
+      <p><strong>Nome:</strong> ${p.nomeParceiro}</p>
+      <p><strong>Bairro:</strong> ${p.bairro}</p>
+      <p><strong>Data de inclusão do registro:</strong> ${p.dataCriacao}</p>
+    </div>
+  </a>
+`;
+
         }).join('');
       } else {
         resultado.innerHTML = '<p>Nenhum parceiro encontrado.</p>';
