@@ -10,6 +10,7 @@ const id = urlParams.get('id');
         return;
 
       }
+       
       let avatarSrc = '';
             if (parceiro.tipoParceiro === 'ECO') {
                 avatarSrc = 'floresta.png'; 
@@ -18,13 +19,12 @@ const id = urlParams.get('id');
             } else { 
                 avatarSrc = 'lixeira-de-reciclagem.png';
             }
-            
-      if (parceiro.papel){
-
-      }
+         document.getElementById('avatar').innerHTML = `<img src="${avatarSrc}" alt="tipo de parceiro" class="img-card"></img>`
+         
+         
 
       document.getElementById('detalhesDoParceiro').innerHTML =
-      
+            
        `
         <h1>${parceiro.nomeParceiro}</h1>
         <p><strong>Tipo:</strong> ${parceiro.tipoParceiro}</p>
@@ -33,6 +33,7 @@ const id = urlParams.get('id');
         <p><strong>Telefone:</strong> ${parceiro.telResponsavel}</p>
         <p><strong>Endereço:</strong> ${parceiro.rua}, ${parceiro.numero} - ${parceiro.bairro}</p>
         <p><strong>Resíduos aceitos:</strong</p>
+      
         <ul>
         ${parceiro.papel ? '<li>Papel</li>' : ''}
         ${parceiro.plastico ? '<li>Plástico</li>' : ''}

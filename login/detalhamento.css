@@ -39,3 +39,7 @@ main{
     padding:10px;
     border-radius: 10px;
 }
+.img-card{
+    width:100px;
+    height:100px;
+}
